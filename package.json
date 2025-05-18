@@ -1,0 +1,28 @@
+{
+  "name": "heliogovernor",
+  "version": "1.0.0",
+  "description": "Flask application with webpack integration",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "start": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "jquery": "^3.7.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^6.11.0",
+    "sass": "^1.89.0",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}

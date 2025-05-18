@@ -1,0 +1,12 @@
+name: "HelioGovernor"
+description: "HelioGovernor is an EMS (energy management system) built for solar power"
+version: "0.1.0"
+slug: "heliogovernor"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+ingress: true

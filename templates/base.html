@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body data-bs-theme="dark">
+        {% block content %}{% endblock %}
+    </body>
+    <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    {% block scripts %}{% endblock %}
 </html>
