@@ -21,10 +21,6 @@ $(document).ready(function() {
   console.log('jQuery version:', $.fn.jquery);
   console.log('Bootstrap components available:', Object.keys(bootstrap).join(', '));
   
-  // Example of initializing Bootstrap components
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-  
   // Example function to initialize Socket.IO when needed
   function connectSocket() {
     const socket = io();
