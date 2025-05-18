@@ -1,4 +1,4 @@
-FROM python:3.11-alpine
+FROM python:3.13-alpine
 
 # Install system dependencies
 RUN apk add --no-cache \
@@ -24,6 +24,8 @@ COPY . .
 # Generate a secure APP_SECRET during build
 RUN APP_SECRET=$(head -c 32 /dev/urandom | base64) && \
     echo "APP_SECRET=$APP_SECRET" >> .env
+
+ENV ALLOWED_IP="172.30.32.2"
 
 # Build frontend assets
 RUN npm run build
