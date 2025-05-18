@@ -1,6 +1,6 @@
 name: "HelioGovernor"
 description: "HelioGovernor is an EMS (energy management system) built for solar power"
-version: "0.1.0"
+version: "0.1.1"
 slug: "heliogovernor"
 init: false
 arch:
